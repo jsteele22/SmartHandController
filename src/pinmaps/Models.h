@@ -43,7 +43,12 @@
   #define KEYPAD_JOYSTICK_HYSTERESIS 200
 #endif
 
-#include "Pins.Esp32.h"
+
+#if defined(ARDUINO_ESP32S2_THING_PLUS)
+  #include "Pins.Esp32_S2_Thing_Plus.h"
+#else
+  #include "Pins.Esp32.h"
+#endif
 #include "Pins.Esp8266.h"
 #include "Pins.M0.h"
 #include "Pins.Teensy.h"
