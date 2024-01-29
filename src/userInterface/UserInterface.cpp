@@ -768,6 +768,7 @@ initAgain:
     goto initAgain;
   }
 
+  VL("JJS:");
   VLF("MSG: Connect, looking for OnStep...");
 
 queryAgain:
